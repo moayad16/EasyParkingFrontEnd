@@ -9,7 +9,7 @@ import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 
 function App() {
   return (
-    <Router basename="subDir">
+    <Router basename="/subDir">
       <Routes>
         <Route path="/" element={<ParkingMonitor/>} />
         <Route path="/traffic" element={<Traffic/>} />
