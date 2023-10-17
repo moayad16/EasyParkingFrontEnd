@@ -16,14 +16,16 @@ export default function Light() {
   useEffect(() => {
     async function fetchData() {
       await axios
-        .get("http://localhost:8080/lighting-system/getLightingInfo")
+        .get(
+          "https://smartcitybackend.onrender.com/lighting-system/getLightingInfo"
+        )
         .then((res) => {
           setData(res.data);
           setTimeout(fetchData, 1000);
         })
         .catch((err) => {
           console.log(err);
-          count ++;
+          count++;
           setTimeout(fetchData, 1000);
         });
     }
