@@ -11,6 +11,7 @@ function App() {
   return (
     <Router>
       <Routes>
+        <Route path="/" element={<ParkingMonitor/>} />
         <Route path="/traffic" element={<Traffic/>} />
         <Route path='/light' element={<Light/>} />
         <Route path='/parking' element={<ParkingMonitor/>} />
