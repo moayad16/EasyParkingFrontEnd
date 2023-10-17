@@ -1,0 +1,25 @@
+.street {
+    background-color: #525d5f;
+    width: 40%;
+    min-height: 10rem;
+    margin-top: auto;
+    position: absolute;
+    left: 1000px;
+}
+
+.street .streetDashesContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 1rem;
+    height: 17rem;
+}
+
+.street .streetDashesContainer .streetDashes {
+    color: white;
+    height: 20px;
+    width: 30%;
+    background-color: white;
+    border-radius: 5px;
+}

@@ -1,0 +1,16 @@
+.maincont {
+  text-align: center;
+  background-color: #8cebcc;
+  min-height: 100vh;
+  max-width: 100vw;
+  color: white;
+
+}
+
+.maincont h1 {
+  margin: 0;
+}
+
+.maincont {
+  position: relative;
+}

@@ -1,0 +1,11 @@
+.lightCont {
+    padding: 5rem 2rem;
+    padding-bottom: 0;
+    max-height: fit-content;
+    background-color: #f7f7fc;
+    min-height: 100vh;
+}
+
+.lightCont .pageTitle {
+    padding-bottom: 3rem;
+}

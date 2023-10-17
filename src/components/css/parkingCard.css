@@ -1,0 +1,33 @@
+.card {
+    margin-bottom: 24px;
+    cursor: pointer;
+    transition: 0.2s;
+    border: 3px dashed #c4c4c4 !important;
+    min-height: 201px !important;
+}
+
+.card:hover {
+    box-shadow: 0 10px 10px 0 rgba(0, 0, 0, 0.5);
+    border: 6px dashed black !important;
+}
+
+.card .card-header {
+    height: 10rem;
+    background-color: white;
+    padding: 0;
+
+}
+
+.card .card-header iframe {
+    border-radius: inherit;
+    max-height: 100%;
+    max-width: 100%;
+}
+
+.card .card-footer {
+    background-color: white;
+}
+
+.card .card-footer .max {
+    border-right: 1px solid #000;
+}
