@@ -28,7 +28,7 @@ export default function ParkingMonitor() {
 
   useEffect(() => {
     axios
-      .get("https://smartcitybackend.onrender.com/parking/getAllParkingSpots")
+      .get("https://easyparking.onrender.com/parking/getAllParkingSpots")
       .then((res) => {
         console.log(res.data);
         // sort the parking spots by distance to the current location
