@@ -3,6 +3,7 @@ import "../css/parkingMonitor.css";
 import { useEffect, useState } from "react";
 import Card from "../../components/js/parkingCard";
 import axios from "axios";
+import TopBar from "../../components/js/topBar";
 
 export default function ParkingMonitor() {
   const [coordinates, setCoordinates] = useState({
@@ -28,7 +29,8 @@ export default function ParkingMonitor() {
 
   useEffect(() => {
     axios
-      .get("https://easyparking.onrender.com/parking/getAllParkingSpots")
+      // .get("https://easyparking.onrender.com/parking/getAllParkingSpots")
+      .get("http://localhost:8080/parking/getAllParkingSpots")
       .then((res) => {
         console.log(res.data);
         // sort the parking spots by distance to the current location
@@ -51,11 +53,11 @@ export default function ParkingMonitor() {
 
   return (
     <div className="parkingMonitor">
-      <h1>Parks Near You</h1>
+      <TopBar />
       <div className="row parkingCont">
         {parkingSpots.map((parkingSpot) => {
           return (
-            <div key={parkingSpot.id} className="col-lg-3">
+            <div key={parkingSpot.id} className="col-lg-4">
               <Card
                 name={parkingSpot.name}
                 lat={parkingSpot.lat}

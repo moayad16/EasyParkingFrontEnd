@@ -2,32 +2,43 @@
     margin-bottom: 24px;
     cursor: pointer;
     transition: 0.2s;
-    border: 3px dashed #c4c4c4 !important;
-    min-height: 201px !important;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+    height: 100%;
+    background-color: #131820;
 }
 
-.card:hover {
+/* .card:hover {
     box-shadow: 0 10px 10px 0 rgba(0, 0, 0, 0.5);
     border: 6px dashed black !important;
-}
+} */
 
 .card .card-header {
-    height: 10rem;
-    background-color: white;
+    height: 20rem;
     padding: 0;
 
 }
 
 .card .card-header iframe {
-    border-radius: inherit;
+
     max-height: 100%;
     max-width: 100%;
 }
 
-.card .card-footer {
-    background-color: white;
+.card .card-body {
+    padding: 0.5rem;
+    color: rgb(207, 207, 207);
 }
 
-.card .card-footer .max {
-    border-right: 1px solid #000;
+.card .card-body ul {
+    list-style: none;
+    padding: 0 20px;
+}
+
+.card .card-body li {
+    border-bottom: 2px dashed #6f6f6f;
+    margin: 1rem 0;
+}
+
+.card .card-body .free-slots {
+    color: green;
 }

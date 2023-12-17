@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
+.topBar{
+    background-color: #1a1a1a;
+    height: fit-content;
+    width: 100vw;
+    left: 0;
+    top: 0;
+    position: fixed;
+    z-index: 1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    box-sizing: border-box;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    animation-duration: 0.2s;
+}
+
+.topBar h1 {
+    color: white;
+    margin-bottom: 20px;
+    margin-top: 10px;
+    font-family: 'Pacifico', cursive;
+}
+
+.topBar span {
+    color: white;
+    font-size: 1.5rem;
+    margin-bottom: 5px;
+    font-family: 'Pacifico', cursive;
+}
